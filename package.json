@@ -6,8 +6,10 @@
   "author": "Max Proske <max@mproske.com>",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc",
-    "dev": "ts-node-dev index.ts"
+    "init-tsconfig": "tsc --init",
+    "dev": "ts-node-dev index.ts",
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
